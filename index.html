@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dartcore</title>
+<meta property="og:title" content="Dartcore - Simple, powerful, secure Dart framework for Servers and Websites.">
+<meta property="og:type" content="website">
+<link rel="preload" href="/fonts/font1.woff2?__frsh_c=caf70a8cc93322ede5f7631b0229dae646c99828" as="font" type="font/woff2" crossorigin="true">
+<link rel="stylesheet" href="css/css1.css">
+<link rel="stylesheet" href="css/css2.css">
+</head>
+<body>
+<div class="flex flex-col min-h-screen">
+<div class="bg-transparent flex flex-col relative z-10">
+<a class="bg-gradient-to-r from-blue-200 to-yellow-200 via-green-300 text-black border-b border-green-400 p-4 text-center group" href="https://pub.dev/packages/dartcore">
+<b>Dartcore v5.0</b> has been released with <b>Template rendering</b>, <b>API Key system</b> and more <span class="group-hover:underline">→</span>
+</a>
+<header class="mx-auto flex gap-3 items-center justify-end h-20 max-w-screen-xl" f-client-nav="false">
+<nav class="flex " f-client-nav="false">
+<ul class="flex items-center gap-x-2 sm:gap-4 mx-4 my-2 sm:my-6 flex-wrap lg:mx-8 2xl:mr-0">
+<li data-frsh-key="Docs (Soon)">
+<a href="/docs" class="p-1 sm:p-2 text-green-900 hover:underline aria-[current]:font-bold">Docs</a>
+</li>
+<li class="flex items-center">
+<a href="https://github.com/dartcore-servers/dartcore" class="hover:text-green-600 inline-block transition" aria-label="GitHub">
+<svg class="h-6 w-6 " fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd">
+</path>
+</svg>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class="flex flex-col -mt-20 relative">
+<div class="bg-green-300 mt-0 pt-32 md:pt-48 !mb-0 bg-gradient-to-br from-blue-100 via-green-200 to-yellow-100">
+<div class="md:grid grid-cols-5 gap-8 md:gap-16 items-center w-full max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 2xl:px-0">
+<div class="flex-1 text-center md:text-left md:col-span-3 pb-8 md:pb-32">
+<h2 class="text-[calc(1rem+4vw)] leading-tight sm:text-5xl lg:text-6xl sm:tracking-tight sm:leading-none! font-extrabold">A Minimal yet powerful HTTP server that fits your needs.</h2>
+<div class="mt-12 flex flex-wrap justify-center items-stretch md:justify-start gap-4">
+<a href="/docs/getting-started" class="group p-4 px-5 pb-3.5 bg-gradient-to-br from-fresh/40 to-fresh font-semibold rounded leading-none flex items-center justify-center hover:bg-fresh transition-colors duration-200 ease-in-out max-w-max text-balance ">Get started<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right relative ml-2 bottom-[0.05em] transition-transform ease-out duration-150 group-hover:translate-x-1" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none">
+</path>
+<path d="M5 12l14 0">
+</path>
+<path d="M13 18l6 -6">
+</path>
+<path d="M13 6l6 6">
+</path>
+</svg>
+</a>
+<div class="bg-slate-800 rounded text-green-100 flex items-center min-w-0 overflow-x-auto">
+<pre class="overflow-x-auto w-full flex-1 px-6 py-4">dart pub add dartcore</pre>
+<div class="relative my-2 mr-4 sm:mr-6">
+<div class="hidden transition ease-in-out absolute pointer-events-none bg-gray-900 text-white p-2 -top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-full box-border rounded opacity-0 false">Copied!</div>
+<button aria-label="Copy to Clipboard" disabled="" class="rounded p-1.5 border border-gray-300 hover:bg-gray-700  relative">
+<svg class="h-4 w-4" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M1.55566 2.7C1.55566 2.03726 2.09292 1.5 2.75566 1.5H8.75566C9.41841 1.5 9.95566 2.03726 9.95566 2.7V5.1H12.3557C13.0184 5.1 13.5557 5.63726 13.5557 6.3V12.3C13.5557 12.9627 13.0184 13.5 12.3557 13.5H6.35566C5.69292 13.5 5.15566 12.9627 5.15566 12.3V9.9H2.75566C2.09292 9.9 1.55566 9.36274 1.55566 8.7V2.7ZM6.35566 9.9V12.3H12.3557V6.3H9.95566V8.7C9.95566 9.36274 9.41841 9.9 8.75566 9.9H6.35566ZM8.75566 8.7V2.7L2.75566 2.7V8.7H8.75566Z" fill="currentColor">
+</path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 flex justify-center items-end">
+</div>
+</div>
+</div>
+<section id="" class="w-full max-w-screen-xl mx-auto my-16 md:my-24 lg:my-32 px-4 sm:px-8 lg:px-16 2xl:px-0 flex flex-col gap-8 md:gap-16 !mb-12 !mt-20">
+<div class="text-center max-w-max mx-auto flex flex-col gap-4">
+<p class="italic text-gray-500 text-lg">Introducing Dartcore:</p>
+<h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl sm:tracking-tight sm:leading-[1.1]! font-extrabold text-balance text-gray-600">So simple that a child can learn it</h2>
+<p class="text-xl text-balance max-w-prose mx-auto">Dartcore is designed to work on <b>any</b> machine, and also is easy-to-use, and Flask-like!</p>
+</div>
+</section>
+<section id="" class="w-full max-w-screen-xl mx-auto my-16 md:my-24 lg:my-32 px-4 sm:px-8 lg:px-16 2xl:px-0 flex flex-col gap-8 md:gap-16 ">
+<div class="grid grid-cols-1 items-center gap-12 md:gap-16 xl:gap-32  md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]  lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] !items-start">
+<div class="flex flex-col gap-4 md:sticky md:top-4">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom text-fresh" width="4rem" height="4rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" alt="Preact icon">
+<path stroke="none" d="M0 0h24v24H0z" fill="none">
+</path>
+<path d="M12 12v.01">
+</path>
+<path d="M19.071 4.929c-1.562 -1.562 -6 .337 -9.9 4.243c-3.905 3.905 -5.804 8.337 -4.242 9.9c1.562 1.561 6 -.338 9.9 -4.244c3.905 -3.905 5.804 -8.337 4.242 -9.9">
+</path>
+<path d="M4.929 4.929c-1.562 1.562 .337 6 4.243 9.9c3.905 3.905 8.337 5.804 9.9 4.242c1.561 -1.562 -.338 -6 -4.244 -9.9c-3.905 -3.905 -8.337 -5.804 -9.9 -4.242">
+</path>
+</svg>
+<h2 class="text-3xl lg:text-4xl xl:text-5xl text-gray-600 font-bold text-balance">
+Build fast apps <b>anywhere</b></h2>
+<p>
+Dartcore makes fast apps that work on any machine. It's built with <a href="https://dart.dev/" class="underline">Dart</a>, a language designed for fast apps</p>
+<p>
+Simple to write; fast to run.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div name="routes/index.tsx" class="-mx-4 sm:mx-0 w-[calc(100%+2rem)] sm:w-full sm:rounded-lg bg-slate-700 overflow-hidden sm:max-w-full [&amp;>
+*]:rounded-t-none ">
+<div class="flex items-stretch justify-start">
+<div class="p-4 flex items-center">
+<svg aria-hidden="true" width="41" height="10" viewBox="0 0 41 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="20.9388" cy="5" rx="4.99155" ry="5" fill="#FFBD2D">
+</ellipse>
+<ellipse cx="5.96421" cy="5" rx="4.99155" ry="5" fill="#FF5F56">
+</ellipse>
+<ellipse cx="35.9134" cy="5" rx="4.99155" ry="5" fill="#26C940">
+</ellipse>
+</svg>
+</div>
+<div class="p-4 w-full leading-none text-slate-400 text-base font-mono">
+bin/main.dart</div>
+</div>
+<code>
+<pre class="rounded-lg text-base leading-relaxed bg-slate-800 text-white p-4 sm:p-6 md:p-4 lg:p-6 2xl:p-8 overflow-x-auto" data-language="dart">
+<span class="token keyword">import</span> <span class="token string">'package:dartcore/dartcore.dart'</span><span class="token punctuation"></span> <span class="token keyword">as</span> <span class="token keyword">dartcore</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+  <span class="token keyword">final</span> <span class="token variable">app</span> <span class="token operator">=</span> <span class="token keyword">dartcore</span><span class="token punctuation">.</span><span class="token class-name">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token variable">app</span><span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">"GET"</span><span class="token punctuation">,</span> <span class="token string">"/"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> <span class="token variable">app</span><span class="token punctuation">.</span><span class="token function">sendJson</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">"hello"</span><span class="token punctuation">:</span> <span class="token string">"world"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">await</span> <span class="token variable">app</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token parameter">port</span> <span class="token punctuation">:</span> <span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code>
+</pre>
+</div>
+<svg aria-hidden="true" width="100%" height="100%" viewBox="0 0 137 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;" class="w-12 -my-8 relative z-10 mx-auto ml-[55%]">
+<path d="M50.704,18c46.89,80.967 38.288,189.344 5.941,254.255" style="fill:none;stroke:#fff;stroke-width:36px;">
+</path>
+<path d="M18,207.944c13.297,11.903 33.957,43.376 38.645,64.311c19.034,-17.758 43.173,-31.125 62.237,-36.621" style="fill:none;stroke:#fff;stroke-width:36px;">
+</path>
+<path d="M50.704,18c47.238,81.059 38.288,189.344 5.941,254.255" style="fill:none;stroke-width:18px;" class="stroke-gray-600">
+</path>
+<path d="M18,207.944c13.044,11.646 33.957,43.376 38.645,64.311c19.034,-17.758 43.173,-31.125 62.237,-36.621" style="fill:none;stroke-width:18px;" class="stroke-gray-600">
+</path>
+</svg>
+ <div class="bg-gradient-to-br font-medium from-blue-200 via-green-300 to-yellow-200 p-8 py-12 text-center items-center flex justify-center skew-y-2 skew-x-3">
+<div class="w-full -skew-y-2 -skew-x-3">
+{
+"hello":"world"
+}
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="forms-section" class="w-full max-w-screen-xl mx-auto my-16 md:my-24 lg:my-32 px-4 sm:px-8 lg:px-16 2xl:px-0 flex flex-col gap-8 md:gap-16 ">
+<div class="grid grid-cols-1 items-center gap-12 md:gap-16 xl:gap-32  md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]  lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] !items-start">
+<div class="flex flex-col gap-4 md:sticky md:top-4">
+<div class="leading-none text-[4rem]">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-route-square-2 text-fresh" width="4rem" height="4rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none">
+</path>
+<path d="M14 5a2 2 0 0 0 -2 2v10a2 2 0 0 1 -2 2">
+</path>
+<path d="M3 17h4v4h-4z">
+</path>
+<path d="M17 3h4v4h-4z">
+</path>
+</svg>
+</div>
+<h2 class="text-3xl lg:text-4xl xl:text-5xl text-gray-600 font-bold text-balance">
+Forms, the right way</h2>
+<p>
+Don't fight the browser. Dartcore helps you handle form submissions and other dynamic requests server-side, from any route.</p>
+<a href="/docs/concepts/forms" class="group p-4 px-5 pb-3.5 bg-gradient-to-br from-fresh/40 to-fresh font-semibold rounded leading-none flex items-center justify-center hover:bg-fresh transition-colors duration-200 ease-in-out max-w-max text-balance mt-2">Forms in Dartcore<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right relative ml-2 bottom-[0.05em] transition-transform ease-out duration-150 group-hover:translate-x-1" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none">
+</path>
+<path d="M5 12l14 0">
+</path>
+<path d="M13 18l6 -6">
+</path>
+<path d="M13 6l6 6">
+</path>
+</svg>
+</a>
+</div>
+<div class="flex flex-col gap-4">
+<div name="routes/index.tsx" class="-mx-4 sm:mx-0 w-[calc(100%+2rem)] sm:w-full sm:rounded-lg bg-slate-700 overflow-hidden sm:max-w-full [&amp;>
+*]:rounded-t-none ">
+<div class="flex items-stretch justify-start">
+<div class="p-4 flex items-center">
+<svg aria-hidden="true" width="41" height="10" viewBox="0 0 41 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="20.9388" cy="5" rx="4.99155" ry="5" fill="#FFBD2D">
+</ellipse>
+<ellipse cx="5.96421" cy="5" rx="4.99155" ry="5" fill="#FF5F56">
+</ellipse>
+<ellipse cx="35.9134" cy="5" rx="4.99155" ry="5" fill="#26C940">
+</ellipse>
+</svg>
+</div>
+<div class="p-4 w-full leading-none text-slate-400 text-base font-mono">bin/main.dart</div>
+</div>
+<pre class="rounded-lg text-base leading-relaxed bg-slate-800 text-white p-4 sm:p-6 md:p-4 lg:p-6 2xl:p-8 overflow-x-auto" data-language="jsx">
+<code>
+<span class="token keyword">import</span> <span class="token string">'package:dartcore/dartcore.dart'</span><span class="token punctuation"></span> <span class="token keyword">as</span> <span class="token keyword">dartcore</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+    <span class="token keyword">final</span> <span class="token variable">app</span> <span class="token operator">=</span> <span class="token keyword">dartcore</span><span class="token punctuation">.</span><span class="token class-name">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+    <span class="token variable">app</span><span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token string">'/form'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">request</span><span class="token punctuation">)</span> <span class="token keyword">async</span> <span class="token punctuation">{</span>
+      <span class="token keyword">await</span> <span class="token variable">app</span><span class="token punctuation">.</span><span class="token function">sendHtml</span><span class="token punctuation">(</span><span class="token variable">request</span><span class="token punctuation">,</span> <span class="token string"></span><span class="token string">"""<span>
+        &lt;form action=&quot;/&quot; method=&quot;POST&quot; class=&quot;text-left md:px-8&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;fieldset class=&quot;mb-4&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;legend class=&quot;mb-2 font-bold&quot;&gt;What's your favorite treat?&lt;/legend&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;lemon-meringue-pie&quot; class=&quot;flex gap-2 items-center&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; value=&quot;lemon-meringue-pie&quot; id=&quot;lemon-meringue-pie&quot; name=&quot;treat&quot; checked=&quot;&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lemon meringue pie&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;lemon-shortbread-cookies&quot; class=&quot;flex gap-2 items-center&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; value=&quot;lemon-shortbread-cookies&quot; id=&quot;lemon-shortbread-cookies&quot; name=&quot;treat&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lemon shortbread cookies&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;lemon-sherbet&quot; class=&quot;flex gap-2 items-center&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; value=&quot;lemon-sherbet&quot; id=&quot;lemon-sherbet&quot; name=&quot;treat&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lemon sherbet&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;lemon-bars&quot; class=&quot;flex gap-2 items-center&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; value=&quot;lemon-bars&quot; id=&quot;lemon-bars&quot; name=&quot;treat&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lemon bars&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;/fieldset&gt;<br>
+        &nbsp;&nbsp;&lt;button type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;pt-2 pb-1 px-3 rounded border-current border-[1.5px] font-semibold&quot;&gt;<br>
+        &nbsp;&nbsp;Submit&lt;/button&gt;<br>
+        &lt;/form&gt;
+      </span>
+      "</h1>""</span><span class="token punctuation"></span> <span class="token variable"></span><span class="token punctuation"></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+    <span class="token keyword">await</span> <span class="token variable">app</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token parameter">port</span> <span class="token punctuation">:</span> <span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+</code>
+</pre>
+</div>
+<svg aria-hidden="true" width="100%" height="100%" viewBox="0 0 137 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;" class="w-12 -my-8 relative z-10 mx-auto ">
+<path d="M50.704,18c46.89,80.967 38.288,189.344 5.941,254.255" style="fill:none;stroke:#fff;stroke-width:36px;">
+</path>
+<path d="M18,207.944c13.297,11.903 33.957,43.376 38.645,64.311c19.034,-17.758 43.173,-31.125 62.237,-36.621" style="fill:none;stroke:#fff;stroke-width:36px;">
+</path>
+<path d="M50.704,18c47.238,81.059 38.288,189.344 5.941,254.255" style="fill:none;stroke-width:18px;" class="stroke-gray-600">
+</path>
+<path d="M18,207.944c13.044,11.646 33.957,43.376 38.645,64.311c19.034,-17.758 43.173,-31.125 62.237,-36.621" style="fill:none;stroke-width:18px;" class="stroke-gray-600">
+</path>
+</svg>
+<div class="bg-gradient-to-br font-medium from-blue-200 via-green-300 to-yellow-200 p-8 py-12 text-center items-center flex justify-center skew-y-2 skew-x-3">
+<div class="w-full -skew-y-2 -skew-x-3">
+<!--frsh:island:FormSubmitDemo:4:-->
+<form action="/" method="POST" class="text-left md:px-8">
+<fieldset class="mb-4">
+<legend class="mb-2 font-bold">
+What's your favorite treat?</legend>
+<label for="lemon-meringue-pie" class="flex gap-2 items-center">
+<input type="radio" value="lemon-meringue-pie" id="lemon-meringue-pie" name="treat" checked="">
+Lemon meringue pie</label>
+<label for="lemon-shortbread-cookies" class="flex gap-2 items-center">
+<input type="radio" value="lemon-shortbread-cookies" id="lemon-shortbread-cookies" name="treat">
+Lemon shortbread cookies</label>
+<label for="lemon-sherbet" class="flex gap-2 items-center">
+<input type="radio" value="lemon-sherbet" id="lemon-sherbet" name="treat">
+Lemon sherbet</label>
+<label for="lemon-bars" class="flex gap-2 items-center">
+<input type="radio" value="lemon-bars" id="lemon-bars" name="treat">
+Lemon bars</label>
+</fieldset>
+<button type="submit" value="Submit" class="pt-2 pb-1 px-3 rounded border-current border-[1.5px] font-semibold">
+Submit</button>
+</form>
+<!--/frsh:island-->
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="relative mt-16">
+<div class="text-center bg-gradient-to-br from-blue-100 via-green-200 to-yellow-100 pb-32 md:pb-48 xl:pb-56 !my-0 before:w-full before:bg-white before:h-16 md:before:h-32 xl:before:h-48 before:[clip-path:polygon(0%_0%,_100%_0%,_0%_100%)] z-0 before:absolute before:top-0 before:left-0">
+<div class="flex flex-col gap-4">
+<img src="images/73AOx0LMHtnH.svg" class="w-full max-w-48 sm:max-w-64 -mt-24 mx-auto mb-12 relative z-0">
+<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-600 font-extrabold">
+Give it a try, it's worth it.</h2>
+<div class="flex flex-col justify-start items-center gap-4">
+<p class="text-xl text-balance max-w-prose">
+Jump right in and build your website/server with Dartcore. Learn everything you need to know in seconds.</p>
+<a href="/docs/getting-started" class="group p-4 px-5 pb-3.5 bg-gradient-to-br from-fresh/40 to-fresh font-semibold rounded leading-none flex items-center justify-center hover:bg-fresh transition-colors duration-200 ease-in-out max-w-max text-balance mx-auto mt-4">Get started<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right relative ml-2 bottom-[0.05em] transition-transform ease-out duration-150 group-hover:translate-x-1" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none">
+</path>
+<path d="M5 12l14 0">
+</path>
+<path d="M13 18l6 -6">
+</path>
+<path d="M13 6l6 6">
+</path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="border-t-2 border-gray-200 md:h-16 flex mt-16 justify-center md:mx-16 !mt-0">
+<div class="flex flex-col sm:flex-row gap-4 justify-between items-center max-w-screen-xl mx-auto w-full sm:px-6 md:px-8 p-4">
+<div class="text-gray-600 text-center">
+<span>
+  © 2024 The Dartcore Team, NEOAPPS, and the contributors. -- Special thanks to the <a href="https://fresh.deno.dev" class="text-gray-600 hover:underline">Fresh by Deno</a> for the website!</span>
+</div>
+<div class="flex items-center gap-8">
+<a href="https://github.com/denoland/fresh" class="text-gray-600 hover:underline">Source</a>
+<a href="https://github.com/denoland/fresh/blob/main/LICENSE" class="text-gray-600 hover:underline">License</a>
+</div>
+</div>
+</footer>
+</div>
+<script type="module" nonce="cadc2c7d5f3f42e7ba51fbb21eff34ec">
+import { boot } from "/_fresh/js/caf70a8cc93322ede5f7631b0229dae646c99828/fresh-runtime.js";import CopyArea from "/_fresh/js/caf70a8cc93322ede5f7631b0229dae646c99828/CopyArea.js";import LemonTop from "/_fresh/js/caf70a8cc93322ede5f7631b0229dae646c99828/LemonTop.js";import LemonBottom from "/_fresh/js/caf70a8cc93322ede5f7631b0229dae646c99828/LemonBottom.js";import Counter from "/_fresh/js/caf70a8cc93322ede5f7631b0229dae646c99828/Counter.js";import { FormSubmitDemo } from "/_fresh/js/caf70a8cc93322ede5f7631b0229dae646c99828/FormSubmitDemo.js";boot({CopyArea,LemonTop,LemonBottom,Counter,FormSubmitDemo},"[[1,5,8,11,15],{\"slots\":2,\"props\":3},[],{\"code\":4},\"deno run -A -r https://fresh.deno.dev\",{\"slots\":6,\"props\":7},[],{},{\"slots\":9,\"props\":10},[],{},{\"slots\":12,\"props\":13},[],{\"start\":14},3,{\"slots\":16,\"props\":17},[],{}]");</script>
+</body>
+</html>
