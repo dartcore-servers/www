@@ -1,3 +1,4 @@
 # www
 Website for dartcore.
-Hosted on Vercel
+Hosted on Netlify
+https://dartcore.netlify.app
